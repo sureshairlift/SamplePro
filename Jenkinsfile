@@ -4,6 +4,7 @@ pipeline {
         stage('go version') {
             steps {
                 sh 'go version'
+                 sh 'echo "succes verion"'
             }
         }
         stage('build') {
