@@ -9,7 +9,7 @@ pipeline {
         }
         stage('build') {
             steps {
-                sh 'go '
+                sh 'go biuld main.go'
             }
         }
     }
