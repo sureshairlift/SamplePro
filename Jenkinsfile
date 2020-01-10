@@ -7,9 +7,16 @@ pipeline {
                  sh 'echo "succes verion"'
             }
         }
+        stage('RUN') {
+            steps {
+                sh 'go run main.go'
+                 sh 'echo "succes verion"'
+            }
+        }
+
         stage('build') {
             steps {
-                sh 'go biuld main.go'
+                sh 'go build main.go'
             }
         }
     }
